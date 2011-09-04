@@ -1,6 +1,6 @@
 #include <boost/format.hpp>
 #include <iostream>
-#include "ParkMillerRNG.hpp"
+#include "random_number_generator/ParkMillerRNG.hpp"
 using namespace std;
 
 #define _ boost::format

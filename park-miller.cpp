@@ -50,10 +50,7 @@ using namespace std;
 #define strcasecmp strcmpi
 #endif
 
-
-
-#include "ParkMillerRNG.hpp"
-
+#include "CUDAParkMillerRNG.hpp"
 
 int main(int argc, char **argv){
     int u, seed;

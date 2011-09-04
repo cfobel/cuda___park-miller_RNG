@@ -1,3 +1,6 @@
 [submodule "site_scons/site_tools/cuda"]
 	path = site_scons/site_tools/cuda
 	url = https://github.com/cfobel/cuda___scons_tool.git
+[submodule "random_number_generator"]
+	path = random_number_generator
+	url = https://github.com/cfobel/cpp___random_number_generator.git
