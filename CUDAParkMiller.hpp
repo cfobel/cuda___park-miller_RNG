@@ -13,6 +13,10 @@ public:
     __device__ CUDAParkMiller(unsigned int seed) : seed(seed),
         reciprocal_m(1.0 / m), reciprocal_m_sub_1(1.0 / (m - 1)) {}
 
+    __device__ void set_seed(unsigned int i_seed) {
+        seed = i_seed;
+    }
+
     __device__ int MOD(real_t value, real_t divisor, real_t divisor_inv) {
         return value - floor(value * divisor_inv) * divisor;
     }
