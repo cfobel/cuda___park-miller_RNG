@@ -21,6 +21,10 @@ public:
         return value - floor(value * divisor_inv) * divisor;
     }
 
+    __device__ int get_seed() {
+        return seed;
+    }
+
     __device__ int get_value() {
         real_t temp = seed * a;
         seed = MOD(temp, m, reciprocal_m);
